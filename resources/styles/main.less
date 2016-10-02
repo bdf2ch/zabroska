@@ -1,0 +1,143 @@
+@section-header-height: 400px;
+
+.section{
+  //height: @section-header-height;
+  overflow: auto;
+  background: #F5F5F5;
+  //padding-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &.no-padding {
+    padding: 0px;
+  }
+
+  .caption {
+    padding: 10px;
+    //padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BDBDBD;
+  }
+
+  .header {
+    height: @section-header-height;
+    background-size: cover !important;
+
+    &.main {
+      background: url("/resources/images/slider1.jpg");
+    }
+  }
+
+}
+
+
+
+
+
+.place-chooser {
+  overflow: auto;
+  //float: left;
+  //width: 850px;
+  margin-right: auto;
+  margin-left: auto;
+  //padding-left: 30px;
+  box-sizing: border-box;
+  //border: 1px solid green;
+
+  .arrow{
+    float: left;
+    width: 5%;
+    height: 400px;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 400px;
+    box-sizing: border-box;
+    //border: 1px solid red;
+
+    span {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 25px;
+      font-weight: bolder;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    }
+  }
+}
+
+
+.place-item {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 350px;
+  background: white;
+  box-sizing: border-box;
+  //border: 1px solid #EEEEEE;
+  //box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  //-webkit-box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.65);
+  //-moz-box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.65);
+  //box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.65);
+
+  &.first {
+    z-index: 2;
+    margin-right: -20px;
+    margin-top: 25px;
+  }
+
+  &.last {
+    z-index: 2;
+    margin-left: -20px;
+    margin-top: 25px;
+  }
+
+  &.active {
+    z-index: 3;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .banner {
+    height: 70%;
+    background-size: cover !important;
+
+    &.zelentsy {
+      background: url("/resources/images/zelentsy.jpg");
+    }
+
+    &.rybachy {
+      background: url("/resources/images/rybachy.jpg");
+    }
+
+    &.varzuga {
+      background: url("/resources/images/varzuga.jpg");
+    }
+  }
+
+  .info {
+    height: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+
+    .title {
+      display: block;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      color: #004D40;
+    }
+
+  }
+}
