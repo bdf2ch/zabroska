@@ -4,6 +4,13 @@
 @app-header-height: 70px;
 @app-footer-height: 100px;
 
+
+@font-face {
+  font-family: "Neucha";
+  src: url("../fonts/Neucha.ttf");
+}
+
+
 html, body {
   margin: 0px;
   padding: 0px;
@@ -36,7 +43,7 @@ html, body {
   margin-right: auto;
   //border: 1px solid green;
   background: white;
-  box-shadow: 0px -10px 15px rgba(0,0,0,0.8);
+  box-shadow: 0px -10px 5px rgba(0,0,0,0.8);
 }
 
 
@@ -53,8 +60,23 @@ html, body {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    width: 20%;
+    width: @app-width / 6;
+    color: #E0F2F1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .header-title {
+    display: block;
+    height: 200px;
+    padding-top: 80px;
+    font-family: "Neucha";
+    font-size: 110px;
     color: white;
+    text-align: center;
+    text-shadow: 3px 0px 2px rgba(150, 150, 150, 1);
+    background: url("../images/compas1.png") no-repeat center center;
+    background-size: 35%;
+    //border: 1px solid red;
   }
 }
 
